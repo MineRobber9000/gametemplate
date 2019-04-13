@@ -7,8 +7,8 @@ $(NAME).love: $(wildcard src/*)
 .PHONY: clean test screenshots
 clean:
 	rm -rf screenshots
-	rm game.love
-test: game.love
-	@love game.love
+	rm $(NAME).love
+test: $(NAME).love
+	@love $(NAME).love
 screenshots:
 	mv ~/.local/share/love/$(IDENTITY)/screenshots .
