@@ -1,5 +1,5 @@
-NAME:=gametemplate
-IDENTITY:=GameTemplate
+NAME:=bfc
+IDENTITY:=BrainfuckFC
 
 $(NAME).love: $(wildcard src/*)
 	cd src && zip -9 -r ../$(NAME).love *
