@@ -1,12 +1,12 @@
 local conf = {}
 function love.conf(t)
-	t.window.title = "khuxkm's game template"
-	t.window.width = 640
-	t.window.height = 600
-	t.identity = "GameTemplate"
-	t.framerate = 30
+	t.window.title = "bfc"
+	t.window.width = 256
+	t.window.height = 240
+	t.identity = "BrainfuckFC"
+	t.framerate = 60
 	t.debug=true
-	t.prefix_blacklist={["sprite."]=true}
+	t.prefix_blacklist={}
 	t.blacklist = {["drawCentered"]=true}
 	t.palette = "DB16"
 	conf.properties = t
