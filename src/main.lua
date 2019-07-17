@@ -1,10 +1,8 @@
 _G.CONFIG = require("conf").properties
 require("cindy").applyPatch()
-require("sprite")
 _G.log = require("log")
 _G.palette = require("palette")
 _G.pal = palette.getPalette(CONFIG.palette)
-_G.res = require("res")
 _G.code = require("code")
 
 function _G.seconds(s)
@@ -33,7 +31,7 @@ function _G.drawCentered(d,x,y,s,xc,yc)
 end
 
 function love.load()
-	font = res.get("font",32)
+--	font = res.get("font",32)
 	code.init()
 end
 
@@ -69,6 +67,6 @@ end
 function love.draw()
 	love.graphics.setBackgroundColor(0,0,0)
 	love.graphics.setColor(255,255,255)
-	love.graphics.setFont(font)
+--	love.graphics.setFont(font)
 	code.draw()
 end
