@@ -17,7 +17,7 @@ bf.pc = 1
 function bf.runInstruction()
 	if bf.pc>string.len(bf.program) then return end
 	char = string.sub(bf.program,bf.pc,bf.pc)
-	print(char)
+--	print(char)
 	bf.commands[char](bf)
 	if bf.memory[bf.pointer]>255 then bf.memory[bf.pointer]=bf.memory[bf.pointer]-256 end
 	if bf.memory[bf.pointer]<0 then bf.memory[bf.pointer]=bf.memory[bf.pointer]+256 end
